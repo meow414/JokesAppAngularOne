@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Include the core AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <!-- Include the AngularJS routing library -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>-->
+  </head>
+  <body ng-app="JokesApp"> <!--Change name of  ng-app here put module name -->
+
+      <div class="container" ng-controller="MainController">
+        <h1 class="text-center">Random Jokes </h1>
+        <div ng-repeat="jokedata in jokes.value" class="text-center well">
+          <p>{{jokedata.joke}}</p>
+        </div>
+      </div>
+
+
+    <!--View -->
+    <!--<div ng-view></div>-->
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+
+    <script src="js/controllers/MainController.js"></script>
+
+    <!-- Directives -->
+
+
+    <!-- Services -->
+
+    <script src="js/services/jokes.js"></script>
+
+
+  </body>
+</html>

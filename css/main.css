@@ -1,0 +1,18 @@
+body{
+  background-color: #D2D7D3;
+}
+p{
+  font-family: 'Taviraj', serif;
+  font-size: 20px;
+}
+.well{
+  background-color: #ecf0f1;
+}
+h1{
+  color: #2c3e50;
+  padding:20px;
+  font-family:  'Taviraj';
+  font-size: 55px;
+  font-weight: bolder;
+  font-stretch: extra-expanded;;
+}
